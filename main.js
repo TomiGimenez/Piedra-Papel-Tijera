@@ -64,7 +64,6 @@ function getPlayerChoice(){
 function game(){
     let scorePlayer = 0;
     let scoreComputer = 0;
-    let scoreTie = 0;
     for (let i = 0; i < 5; i++) {
         const playerSelection = getPlayerChoice();
         const computerSelection = getComputerChoice();
@@ -73,8 +72,6 @@ function game(){
             scorePlayer++;
         } else if (playRound(playerSelection, computerSelection)==loss(playerSelection, computerSelection)){
             scoreComputer++;
-        } else {
-            scoreTie++;
         }
     }
     console.log("--------------");
@@ -88,8 +85,7 @@ function game(){
     }
     console.log(`Score:
     Player: ${scorePlayer}
-    Computer: ${scoreComputer}
-    Draws: ${scoreTie}`); 
+    Computer: ${scoreComputer}`); 
 }
 
 game()
