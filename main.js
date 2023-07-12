@@ -37,34 +37,6 @@ function isGameOver() {
     return scorePlayer === 5 || scoreComputer === 5;
 }
 
-
-// Game
-// function game(){
-//     for (let i = 0; i < 5; i++) {
-//         const playerSelection = getPlayerChoice();
-//         const computerSelection = getComputerChoice();
-//         console.log(playRound(playerSelection, computerSelection));
-//         if (playRound(playerSelection, computerSelection)==win(playerSelection, computerSelection)){
-//             scorePlayer++;
-//         } else if (playRound(playerSelection, computerSelection)==loss(playerSelection, computerSelection)){
-//             scoreComputer++;
-//         }
-//     }
-//     console.log("--------------");
-//     console.log("Game Over");
-//     if (scorePlayer > scoreComputer) {
-//         console.log("Player was the winner");
-//     } else if (scorePlayer < scoreComputer) {
-//         console.log("Computer was the winner");
-//     } else {
-//         console.log("We have a tie!");
-//     }
-//     console.log(`Score:
-//     Player: ${scorePlayer}
-//     Computer: ${scoreComputer}`); 
-// }
-
-
 // Interfaz Grafica
 
 const scoreInfo = document.querySelector('#scoreInfo');
